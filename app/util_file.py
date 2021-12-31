@@ -29,6 +29,6 @@ def plot_weight():
     plt.fill_between(xx, df.SD3neg.values, df.SD2neg.values, color="red", alpha=0.4)
     plt.scatter(x_J, df.Jennifer.values)
     plt.grid()
-    plt.savefig(ARTIFACT_PATH / "weight.png")
+    plt.savefig(ARTIFACT_PATH / "weight.jpg")
 
     return
