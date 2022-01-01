@@ -40,3 +40,13 @@ def weight_plot(request: Request):
     plot_weight()
     return templates.TemplateResponse("weight.html", {"request": request})
 
+
+@app.get("/access_db")
+def access_db(request: Request):
+    return templates.TemplateResponse("access_db.html", {"request": request})
+
+
+@app.post("/access_db")
+def access_db(request: Request, week: int = Form(...), weight: float = Form(...)):
+    print(week, weight)
+    return templates.TemplateResponse("access_db.html", {"request": request})
