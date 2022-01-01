@@ -12,7 +12,7 @@ def plot_weight():
     SOURCE_DATA_FILE = (
         PROJECT_PATH / "data/source_data/wfa_girls_0-to-13-weeks_zscores.csv"
     )
-    ARTIFACT_PATH = PROJECT_PATH / "artifacts"
+    ARTIFACT_PATH = PROJECT_PATH / "static"
 
     df = pd.read_csv(SOURCE_DATA_FILE)
     del_cols = ["L", "M", "S"]
