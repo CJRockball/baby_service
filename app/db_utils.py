@@ -8,6 +8,11 @@ DB_PATH = APP_DIR / "baby.db"
 
 
 def get_weight_data():
+    """Get weight data
+
+    Returns:
+        [List]: list of tupples (week,weight)
+    """
     global DB_PATH
     with sqlite3.connect(DB_PATH) as conn:
         cur = conn.cursor()
