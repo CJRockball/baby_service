@@ -1,0 +1,7 @@
+2022-01-04 14:14:45,878 INFO     Started server process [8932]
+2022-01-04 14:14:45,887 INFO     Waiting for application startup.
+2022-01-04 14:14:45,888 INFO     Application startup complete.
+2022-01-04 14:15:00,550 INFO     Shutting down
+2022-01-04 14:15:00,665 INFO     Waiting for application shutdown.
+2022-01-04 14:15:00,665 INFO     Application shutdown complete.
+2022-01-04 14:15:00,669 INFO     Finished server process [8932]

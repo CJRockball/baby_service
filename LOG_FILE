@@ -1,0 +1,23 @@
+root - DEBUG - This message should go to the log file
+root - INFO - So should this
+root - WARNING - And this, too
+root - ERROR - And non-ASCII stuff, too, like Øresund and Malmö
+uvicorn.error - INFO - Started server process [9560]
+uvicorn.error - INFO - Waiting for application startup.
+uvicorn.error - INFO - Application startup complete.
+root - INFO - Opened weight page
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+INFO:uvicorn.error:Started server process [392]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:Opened weight page
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+INFO:uvicorn.error:Started server process [12636]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
