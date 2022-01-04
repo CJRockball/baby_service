@@ -33,9 +33,17 @@ def weight_plot():
     result = get_weight_data()
     weight_data = [result[i][1] for i in range(len(result))]
     week_data = [result[i][0] for i in range(len(result))]
-    return [week_data, weight_data]
+    return dict(result)
 
 
 @app.get("/access_db")
-def get_access_db(request: Request):
-    return templates.TemplateResponse("access_db.html", {"request": request})
+def get_access_db(week: int, weight: float, status_code=201):
+    add_weight_table(week, weight)
+    return {"week": week, "weight": weight}
+
+
+@app.get("/reset_db")
+def db_reset(statuscode=200):
+    reset_db()
+    result = get_weight_data()
+    return dict(result)
