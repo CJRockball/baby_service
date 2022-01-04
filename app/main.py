@@ -1,14 +1,13 @@
 import logging
 import pathlib
 
-from fastapi import FastAPI, Form, Request
+from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from starlette.responses import FileResponse
 
 from app.db import reset_db
 from app.db_utils import add_weight_table, get_weight_data
-from app.util_file import plot_weight
 
 templates = Jinja2Templates(directory="templates")
 app = FastAPI()
