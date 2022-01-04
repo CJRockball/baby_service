@@ -2,7 +2,6 @@ import logging
 import pathlib
 
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from starlette.responses import FileResponse
 
@@ -11,7 +10,6 @@ from app.db_utils import add_weight_table, get_weight_data
 
 templates = Jinja2Templates(directory="templates")
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
 favicon_path = "favicon.ico"
 
 PROJECT_PATH = pathlib.Path(__file__).resolve().parent.parent

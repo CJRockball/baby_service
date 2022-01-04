@@ -23,9 +23,7 @@ def plot_weight():
 
     result = get_weight_data()
     y_J = [result[i][1] for i in range(len(result))]  # df.Week.values
-    x_J = [
-        result[i][0] for i in range(len(result))
-    ]  # [i for i in range(len(df.Jennifer.to_list()))]
+    x_J = [result[i][0] for i in range(len(result))]
 
     plt.figure()
     plt.fill_between(xx, df.SD0.values, df.SD1.values, color="green", alpha=0.4)
